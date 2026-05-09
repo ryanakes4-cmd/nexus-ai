@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nexus-bg: #020617; /* slate-950 */
+  --color-nexus-surface: #0f172a; /* slate-900 */
+  --color-nexus-accent: #6366f1; /* indigo-500 */
+  --color-nexus-accent-hover: #4f46e5; /* indigo-600 */
+  --color-nexus-border: #1e293b; /* slate-800 */
+  --color-nexus-text: #e2e8f0; /* slate-200 */
+  --color-nexus-muted: #64748b; /* slate-500 */
+  --color-nexus-success: #10b981; /* emerald-500 */
+}
+
+:root {
+  background-color: var(--color-nexus-bg);
+  color: var(--color-nexus-text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Roboto Mono', monospace;
+}
+
+/* Custom scrollbar for technical look */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-nexus-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-nexus-border);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-nexus-accent);
+}
